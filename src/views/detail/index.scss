@@ -1,0 +1,14 @@
+.common-iframe {
+  font-size: 25px;
+  font-weight: bold;
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: calc(100vh - 64px);
+  }
+
+  .button{
+    border-radius: 25px;
+  }
+}
