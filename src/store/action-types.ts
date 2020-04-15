@@ -1,5 +1,5 @@
-export const PROJECTFIX = "Para";
-export const PROJECTEND = "View";
+export const PROJECTFIX = "React";
+export const PROJECTEND = "Cli";
 export const PROJECT = `${PROJECTFIX}${PROJECTEND}`; // 项目的key
 
 /* Project */
@@ -18,5 +18,3 @@ export const LOGINOUT = "LOGINOUT";
 export const MENU = "MENU"; // 菜单数据
 export const SIDEBAR = "SIDEBAR"; // 左侧菜单
 export const CURRENT_MENU = "CURRENTMENU"; // 当前的菜单
-export const DETAIL_MENU = "DETAILTMENU"; // 当前右侧的展示菜单
-

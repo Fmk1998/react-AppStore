@@ -26,11 +26,10 @@ const mapStateToProps = (state: State) => ({
 
 const DynamicRouter: FunctionComponent<Props> = () => {
     return (
+
         <Suspense fallback={Loading}>
             <Switch>
                 <Route exact path="/" component={lazyImport('home/index')}/>
-                <Route exact path="/type" component={lazyImport('type/index')}/>
-                <Route exact path="/detail" component={lazyImport('detail/index')}/>
             </Switch>
         </Suspense>
     );

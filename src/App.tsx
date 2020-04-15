@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from "react";
 import {IntlProvider} from "react-intl"; // 国际化
-import Lang from "./lang";
+import Lang from "./locale";
 import {connect} from "react-redux";
 import {HashRouter} from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
@@ -44,11 +44,12 @@ const App: FunctionComponent<Props> = ({history, language}: Props) => {
             <ConnectedRouter history={history}>
                 <HashRouter>
                     <IntlProvider key="intl" locale={language} messages={getLocalMessage()}>
-                        <Grid container style={{width:'100%',height:'100%',display:'flex'}}>
-                            <Grid item style={{width:'5%'}}>
-                                <SlideBar list={[]}/>
-                            </Grid>
-                            <Grid item style={{width:'95%',minWidth:'50%'}}>
+                        <Header/>
+                        <Grid container style={{"padding": "20px"}}>
+                            {/*<Grid item xs={3}>*/}
+                            {/*<SlideBar list={[]}/>*/}
+                            {/*</Grid>*/}
+                            <Grid item xs={12}>
                                 <Main/>
                             </Grid>
                         </Grid>
