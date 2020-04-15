@@ -44,12 +44,11 @@ const App: FunctionComponent<Props> = ({history, language}: Props) => {
             <ConnectedRouter history={history}>
                 <HashRouter>
                     <IntlProvider key="intl" locale={language} messages={getLocalMessage()}>
-                        <Header/>
-                        <Grid container>
-                            <Grid item xs={2}>
+                        <Grid container style={{width:'100%',height:'100%',display:'flex'}}>
+                            <Grid item style={{width:'5%'}}>
                                 <SlideBar list={[]}/>
                             </Grid>
-                            <Grid item xs={10}>
+                            <Grid item style={{width:'95%',minWidth:'50%'}}>
                                 <Main/>
                             </Grid>
                         </Grid>

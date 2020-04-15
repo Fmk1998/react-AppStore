@@ -1,14 +1,154 @@
-.common-iframe {
-  font-size: 25px;
-  font-weight: bold;
+$color1: rgba(47, 52, 65, 1);
+$color2: rgba(157, 178, 223, 1);
+$color3: rgba(92, 107, 141, 1);
+$color4: rgba(106, 132, 255, 1);
+$color5: rgba(255, 255, 255, 1);
+$color6: rgba(33, 36, 41, 1);
+$color7: rgba(16, 16, 19, 1);
+$dIcon: 80px;
+$detail-iframe-padding: 20px;
 
-  iframe {
-    border: none;
-    width: 100%;
-    height: calc(100vh - 64px);
+@media only screen and (max-width: 749px) {
+  .detail-iframe {
+    margin-left: 50px;
   }
+}
 
-  .button{
-    border-radius: 25px;
+@media only screen and (min-width: 750px) {
+  .detail-iframe {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .detail-iframe {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .detail-iframe {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .detail-iframe {
+    margin-left: 0;
+  }
+}
+
+.detail-iframe {
+  background: #E4E4E4;
+  height: 100%;
+
+  .dC {
+    padding: 20px;
+
+    .dC1 {
+      .dButton {
+        width: $dIcon;
+        height: $dIcon;
+        background: $color1;
+        border-radius: 4px;
+
+        .dIcon {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .dC2 {
+      .dC2container1 {
+        .dC2name, .dC2detail {
+          font-weight: 400;
+        }
+
+        .dC2name {
+          width: 80px;
+          height: 27px;
+          font-size: 20px;
+          line-height: 24px;
+          color: $color2;
+        }
+
+        .dC2description {
+          margin: 10px;
+          width: 58px;
+          height: 17px;
+          font-size: 14px;
+          line-height: 17px;
+          color: $color3;
+        }
+
+        .button {
+          margin-top: 19px;
+          width: 104px;
+          height: 33px;
+          background: $color4;
+          border-radius: 4px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          color: $color5;
+        }
+      }
+    }
+
+    .dC3 {
+      margin-top: 32px;
+      width: 900px;
+      height: 220px;
+      background: $color6;
+      border: 2px solid $color7;
+      border-radius: 5px;
+
+      .swiper-wrapper {
+        padding-top: 20px;
+        height: 220px;
+        display: flex;
+        justify-content: space-between;
+
+        .swiper-slide {
+          width: 100px;
+          height: 80%;
+          text-align: center;
+        }
+
+        .lbtImg {
+          width: 90%;
+          height: 100%;
+          opacity: 0.5
+        }
+
+        .swiper-slide-active img {
+          opacity: 0.5
+        }
+
+        .swiper-slide-next img {
+          opacity: 1;
+        }
+      }
+
+
+    }
+
+    .dc4 {
+      padding: 21px 35px;
+      margin-top: 32px;
+      background: $color6;
+      border: 2px solid $color7;
+      border-radius: 5px;
+
+      .md {
+        width: auto;
+        height: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1vm;
+        color: $color2;
+      }
+    }
   }
 }

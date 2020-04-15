@@ -13,7 +13,9 @@ import {Debugger} from 'para-lib';
 /* @dynamic end */
 declare let window: Window & { ParaWeb: any };
 /* @dynamic version */
-window.ParaWeb = {version: '0.1.0', env: 'dev', buildTime: '2020-3-23 21:37:52'}
+// =======
+window.ParaWeb = {version: '0.1.0', env: 'dev', buildTime: '2020-3-5 16:13:12'}
+// >>>>>>> Stashed changes
 /* @dynamic end */
 
 const theme = createMuiTheme({

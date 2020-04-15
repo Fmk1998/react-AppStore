@@ -1,3 +1,8 @@
 .main {
-  flex-grow: 1;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #2E323A;
+  overflow: auto;
 }
